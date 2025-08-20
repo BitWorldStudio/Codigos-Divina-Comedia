@@ -1,5 +1,5 @@
 using UnityEngine;
-using TMpro;
+using TMPro;
             public class SistemaMisiones : MonoBehaviour
 {
         [SerializeField] private TextMeshProUGUI TextoMisiones;
@@ -51,7 +51,7 @@ using TMpro;
 
     {
             //esta linea va despues de terminar la mision de aristoteles
-       TextoMisiones.text = "sigue las flechas para encontrar la proxima estatua"
+       TextoMisiones.text = "sigue las flechas para encontrar la proxima estatua";
     }
     
 }
