@@ -1,0 +1,57 @@
+using UnityEngine;
+using TMpro;
+            public class SistemaMisiones : MonoBehaviour
+{
+        [SerializeField] private TextMeshProUGUI TextoMisiones;
+
+    public void EmpezarJuego()
+    
+    {
+        //esta linea se ejecuta apenas empieza el juego
+       TextoMisiones.text = "Busca la salida del bosque..."; 
+    }
+
+    public void FinCharlaVirgilio()
+    
+    {
+        //esta linea va luego de charlar con virgilio
+        TextoMisiones.text = "entra a los 9 circulos del infierno..."; //
+    }
+    
+    public void ActivaPrimeraEstatua()
+    
+    {
+        //esta linea va apenas entras al limbo, luego de la segunda charla con virgilio
+        TextoMisiones.text = "busca y activa la estatua de la sabiduria...";
+    }
+
+    public void CharlaAristoteles()
+    
+    {
+        //esta linea va luego de activar la primera estatua
+        TextoMisiones.text = "Busca a aristoteles...";
+        
+    }
+
+    public void BuscarLamparas()
+
+    {
+        //esta linea va luego de hablar con aristoteles por primera vez
+        TextoMisiones.text = "encuentra la lampara de aristoteles";
+    }
+
+    public void VolverConAristoteles()
+
+    {
+        //esta linea va cuando agarras la lampara verdadera
+        TextoMisiones.text = "Devuelvele la lampara a aristoteles";  
+    }
+
+    public void ActivaSegundaEstatua()
+
+    {
+            //esta linea va despues de terminar la mision de aristoteles
+       TextoMisiones.text = "sigue las flechas para encontrar la proxima estatua"
+    }
+    
+}
